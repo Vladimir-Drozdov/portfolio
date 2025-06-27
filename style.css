@@ -21,7 +21,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+@media (max-width: 800px) {
+    .card {    
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width: 650px) {
+    .card {    
+        width: 100%;
+    }
+}
 .card:hover {
     transform: translateY(-5px);
 }
